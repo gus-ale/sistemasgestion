@@ -127,7 +127,7 @@
         <!-- Temas del curso -->
         <a href="javascript:void(0)" onclick="toggleSubmenu('tema1')">MODULO 1 : INTRODUCCIÓN A LA PROGRAMACIÓN</a>
         <div id="tema1" class="submenu">
-            <a href="#" onclick="loadVideo('WmWIBRZ5qyE', '')">Introducción</a>
+            <a href="#" onclick="loadVideo('WmWIBRZE', '')">Introducción</a>
             <a style = "color: white ;background-color: #333;"  >TIPOS Y VARIABLES</a>
             <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Expresiones y sentencias</a>
             
@@ -610,7 +610,7 @@
         function loadVideo(videoId, description) {
             var videoContainer = document.getElementById('video-container');
             videoContainer.innerHTML = `
-                <h2>Video del Curso de MATEMATICA 51</h2>
+                <h2>Video del Curso de SISTEMAS DE GESTION</h2>
                 <iframe width="640" height="360" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
                 <p class="video-description">${description}</p>`;
         }
