@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Sistemas de Gestión  con python</title>
+    <style>
+        body {
+            background-color: #151437;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Estilos del encabezado */
+        .header {
+            background-color: #000000; /* Gris medio */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header img {
+            width: 140px;
+            heigth :130px;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #FFA500; /* Naranja */
+        }
+
+        /* Estilos del menú */
+        .menu {
+            float: left;
+            width: 300px;
+            margin-right: 20px;
+            background-color: #333; /* Gris oscuro */
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .menu h2 {
+            color: #FFA500; /* Naranja */
+            text-align: center;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px;
+            background-color: #4D4D4D; /* Gris medio */
+            color: white;
+            text-decoration: none;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            background-color: #FFA500; /* Naranja */
+        }
+
+        .submenu {
+            display: none;
+            padding-left: 20px;
+        }
+
+        .submenu a {
+            background-color: #B3B3B3; /* Gris claro */
+            color: #333;
+            font-weight: normal;
+        }
+
+        /* Estilo para el contenedor del video */
+        #video-container {
+            margin-top: 10px;
+            margin-left: 320px;
+            text-align: center;
+            background-color: #494854; /* Gris suave */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #FFA500; /* Naranja */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #FFA500;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Descripción del video */
+        .video-description {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #FFB200;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado con imagen y texto -->
+    <div class="header">
+        <img src="fe.png" alt="Logo">
+        <h1>Bienvenido al Curso de Sistemas de Gestión con Python : </h1>
+        <p></p>
+        <h1 style= " color: #38F80D;"> </h1>
+        
+    </div>
+
+ 
+    <div class="menu">
+        <h2>MENU PRINCIPAL</h2>
+        <!-- Temas del curso -->
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema1')">MODULO 1 : INTRODUCCIÓN A LA PROGRAMACIÓN</a>
+        <div id="tema1" class="submenu">
+            <a href="#" onclick="loadVideo('WmWIBRZ5qyE', '')">Introducción</a>
+            <a style = "color: white ;background-color: #333;"  >TIPOS Y VARIABLES</a>
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Expresiones y sentencias</a>
+            
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Operadores aritméticos</a>
+            <a href="#" onclick="loadVideo('WmWIBRZ5qyE', '')">Tipos de datos</a>
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Variables</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Variables en memoria</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Funciones predefinidas</a>
+            <a style = "color: white ;background-color: #333;"  >CONTROL DE FLUJO CONDICIONAL</a>
+            <a href="#" onclick="loadVideo('WmWIBRZ5qyE', '')">Control de flujo condicional</a>
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">if...</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">if...else</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">if...elif...</a>
+            <a style = "color: white ;background-color: #333;"  >SECUENCIAS</a>
+            <a href="#" onclick="loadVideo('WmWIBRZ5qyE', '')">Contenedores en python</a>
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Listas</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Tuplas</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Diccionarios</a>
+            <a href="#" onclick="loadVideo('WmWIBRZ5qyE', '')">Operaciones con secuencias</a>
+            <a style = "color: white ;background-color: #333;"  >OPERACIONES PARA SECUENCIAS MUTABLES</a>
+            
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Asignación y borrado</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Métodos .pop() .remove() .clear() </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Otros métodos</a>
+			<a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Asignación y borrado</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Métodos .pop() .remove() .clear() </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Otros métodos</a>          
+             <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Operadores de comparación</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Usos de listas y tuplas </a>
+            <a style = "color: white ;background-color: #333;"  >CADENAS DE CARACTERES</a>
+            
+            
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Cadenas de caracteres</a>
+            <a style = "color: white ;background-color: #333;"  >CONTROL DE FLUJO ITERATIVO</a>
+			<a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Bucle while</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Bucle for </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Iterables</a>  
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Bucle while</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Bucle for </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">zip()</a>
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">break y continue</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Bucles anidados </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">El tipo NonType</a>  
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Listas por comprensión</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Ejemplos I </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos II</a>
+
+            
+            
+            
+            <a style = "color: white ;background-color: #333;"  >MANEJO DE EXCEPCIONES</a>
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Tipos de errores</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Errores en tiempo de ejecución </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Estructura try .... except</a>  
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Bloque except</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">try...except..else...finally</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">raise</a>
+        
+            <a style = "color: white ;background-color: #333;"  >FUNCIONES</a>
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Introduccion</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Funciones sin parámetros</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Funciones con parámetros</a>  
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Funciones que retornan mas de un resultado</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Parámetros con valores por defecto</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Parámetros y argumentos</a>
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Funciones puras e impuras</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Variables locales y globales</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Funciones lambda</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">map() , filter() , sorted() , reduce()</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Funciones y tratamiento de excepciones</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Ejemplos I </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos II</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Ejemplos III </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos IV</a>
+           
+            <a style = "color: white ;background-color: #333;">MODULOS</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Módulos</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Introducción a las pruebas unitarias</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Biblioteca estandar </a>
+            
+            
+            
+            
+            <a style = "color: white ;background-color: #333;"  >ARCHIVOS</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Concepto de archivo </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Tipos de archivo</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Elementos básicos de programación con archivos </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Lectura línea por línea</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Manejo de excepciones con archivos </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Administrador de contexto - with</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Otra forma de lectura en python</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Lectura de archivo con formato complejo</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Escritura de un archivo </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Ejemplos II </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos III</a>
+            
+            <a style = "color: white ;background-color: #333;"  >DICCIONARIOS Y CONJUNTOS</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Introducción </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Diccionarios vs Listas</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Operaciones con diccionarios </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos con diccionarios</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Conjuntos </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos I</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Ejemplos II </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos III</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Ejemplos IV </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos V</a>
+            
+            <a style = "color: white ;background-color: #333;"  >ALGORITMOS Y PROGRAMACIÓN</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Ejemplos I </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos II</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Ejemplos I </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos II</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Ejemplos I </a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Ejemplos II</a>
+                                                          
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema2')">MODULO 2 : P.O.O.</a>
+        <div id="tema2" class="submenu">
+			<a style = "color: white ;background-color: #333;"  >INTRODUCCION A P.O.O.</a>
+            <a href="#" onclick="loadVideo('F2HQq57AmQg', '')">Clases y Objetos</a>
+           
+            <a href="#" onclick="loadVideo('ttypVaawirA', '')">Atributos y Métodos</a>
+             <a href="#" onclick="loadVideo('F2HQq57AmQg', '')">__init()__ y el constructor</a>
+           
+            
+            <a href="#" onclick="loadVideo('F2HQq57AmQg', '')">Métodos de instancia vs métodos de clase</a>
+            <a href="#" onclick="loadVideo('F2HQq57AmQg', '')">Métodos estáticos</a>
+            <a href="#" onclick="loadVideo('ttypVaawirA', '')">Encapsulamiento</a>
+            <a href="#" onclick="loadVideo('UQqx7jIcd7Y', '')">self y su uso</a>
+            <a style = "color: white ;background-color: #333;"  >EJERCICIOS</a>
+            <a href="#" onclick="loadVideo('F2HQq57AmQg', '')">Clase Persona</a>
+            <a href="#" onclick="loadVideo('ttypVaawirA', '')">Clase Círculo</a>
+            <a href="#" onclick="loadVideo('UQqx7jIcd7Y', '')">Clase CuentaBancaria</a>
+            
+            <a style = "color: white ;background-color: #333;"  >PRINCIPIOS CLAVE DE LA P.O.O.</a>
+            
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Herencia y super()</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Polimorfismo</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Abstracción</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Encapsulamiento Profundo</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Tipos de Errores Personalizados</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Diagramas UML</a>
+            <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Relaciones entre clases</a>
+           <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Composición vs Herencia</a>
+           
+           <a style = "color: white ;background-color: #333;"  >DISEÑO DE SISTEMAS CON P.O.O.</a>
+			 <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Principios SOLID</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Relaciones entre clases : Asociación</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Relaciones entre clases : Agregación</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Relaciones entre clases : Composición</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Diagramas UML</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Organización del código</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Buenas prácticas</a>
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Sistema de gestión de biblioteca</a>
+            <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Clases : Libro ,Usuario, Prestamo , Biblioteca</a>
+           <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Métodos de préstamo , devolución ,búsqueda</a>
+        </div>
+		<a href="javascript:void(0)" onclick="toggleSubmenu('tema3')">MODULO 3 :ESTRUCTURA DE DATOS</a>
+        <div id="tema3" class="submenu">
+            <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Métodos de Ordenamiento</a>
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Búsqueda Secuencial</a>
+            <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Búsqueda Binaria</a>
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Recursividad I</a>
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Recursividad II</a>
+            
+            <a href="#" onclick="loadVideo('F2HQq57AmQg', '')">Pilas</a>
+            <a href="#" onclick="loadVideo('ttypVaawirA', '')">Colas </a>
+            <a href="#" onclick="loadVideo('UQqx7jIcd7Y', '')">Colas de Prioridad</a>
+            
+            <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Listas Enlazadas Simples</a>
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Listas Enlazadas Dobles</a>
+            <a href="#" onclick="loadVideo('UQqx7jIcd7Y', '')">Árboles Binarios Búsqueda</a>
+            
+            <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Árboles Balanceados</a>
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Grafos</a>
+            
+               
+        </div>
+        
+        
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema4')">MÓDULO 4 : BASES DE DATOS</a>
+        <div id="tema4" class="submenu">
+			
+			<a style = "color: white ;background-color: #333;"  >INTRODUCCION A BBDD</a>
+			
+            <a href="#" onclick="loadVideo('-E_NRxCg7zY', '')">¿Qué es una Base de Datos?</a>
+            
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Tipos de Bases de Datos</a>
+             <a href="#" onclick="loadVideo('UQqx7jIcd7Y', '')">Sistemas de Gestion de BBDD </a>
+            
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Introducción a SQLite</a>
+             <a style = "color: white ;background-color: #333;"  >PRACTICA</a>
+             
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Primera BBDD con SQLite en DB Browser</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Creación tabla usuarios</a>
+       <a style = "color: white ;background-color: #333;"  >MODELO RELACIONAL Y ÁLGEBRA RELACIONAL</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">¿Qué es el modelo relacional?</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Tuplas, atributos, relaciones</a>
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Claves primarias y foráneas</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Operaciones básicas </a>
+			<a style = "color: white ;background-color: #333;"  >PRACTICA</a>
+             
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Crear 2 tablas relacionadas(clientes y pedidos)</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Aplicar operaciones básicas con SQL</a>
+       
+        <a style = "color: white ;background-color: #333;"  >DIAGRAMAS ENTIDAD - RELACION ER</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">¿Qué es un diagrama ER?</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Entidades, atributos , relaciones</a>
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Cardinalidad (1:1 , 1:N , N:M)</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Claves primarias y compuestas </a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Notación Chen y UML simplificada </a>
+			<a style = "color: white ;background-color: #333;"  >PRACTICA</a>
+             
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Diseño de un diagrama ER para sistema de biblioteca</a>
+            
+         <a style = "color: white ;background-color: #333;"  >LENGUAJE DE DEFINICIÓN DE DATOS DDL</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">CREATE , ALTER , DROP</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Tipos de datos en SQLite</a>
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Claves primarias y foráneas</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Restricciones </a>
+            
+			<a style = "color: white ;background-color: #333;"  >PRACTICA</a>
+             
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Crear una BBDD con varias tablas usando DDL</a>
+			 <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Implementar el diagrama ER de la Biblioteca</a>
+       
+        <a style = "color: white ;background-color: #333;"  >LENGUAJE DE MANIPULACIÓN DE DATOS DML</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">INSERT, UPDATE , DELETE</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">SELECT : Filtros con WHERE y operadores lógicos</a>
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Ordenamientos y funciones agregadas</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Agrupamiento con GROUP BY y HAVING </a>
+            
+			<a style = "color: white ;background-color: #333;"  >PRACTICA</a>
+             
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Insertar datos de prueba en tablas</a>
+			 <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Consultas : listar, buscar, agrupar y ordenar información</a>
+       
+        
+         <a style = "color: white ;background-color: #333;"  >CONSULTAS AVANZADAS Y JOIN</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">INNER JOIN , LEFT JOIN , "RIGHT JOIN" </a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Vistas (CREATE VIEW)</a>
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Consultas anidadas y correlacionadas</a>
+             
+            
+			<a style = "color: white ;background-color: #333;"  >PRACTICA</a>
+             
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Consultar pedidos realizados por cada cliente</a>
+			 <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Consultar productos sin ventas (usando LEFT JOIN)</a>
+			
+		 <a style = "color: white ;background-color: #333;"  >INTEGRIDAD</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Integridad de datos </a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Anomalías y redundancia</a>
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Normalización 1FN , 2FN , 3FN</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Indices en SQLite </a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Copias de seguridad(.backup, exportar .sql , .csv</a>
+            
+			<a style = "color: white ;background-color: #333;"  >PRACTICA</a>
+             
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Normalizar una BBDD mal diseñada</a>
+			 <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Exportar la BBDD a .sql o .csv</a>	
+        
+		<a style = "color: white ;background-color: #333;"  >PROYECTOS CON BBDD</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Sistema de gestión de ventas </a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Sistema académico</a>
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Sistema de alquiler de películas</a>	
+        </div>
+        
+        
+        	<a href="javascript:void(0)" onclick="toggleSubmenu('tema5')">MÓDULO 5 : INTERFAZ GRÁFICA TKINTER</a>
+        <div id="tema5" class="submenu">
+			<a style = "color: white ;background-color: #333;"  >INTRODUCCIÓN A TKINTER</a>  
+            <a href="#" onclick="loadVideo('OCxKBNFutkQ', ' ')">¿Qué es Tkinter?</a>
+            <a href="#" onclick="loadVideo('4zZh8PyUuvo', '')">Primera ventana Tk()</a>
+            <a href="#" onclick="loadVideo('sdiKAq8TFO8', '')">Ciclo principal mainloop()</a>
+            <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Título, tamaño ,ícono y fondo</a>
+             <a href="#" onclick="loadVideo('sdiKAq8TFO8', '')">Widgets básicos Label, Button ,Entry , Text </a>
+            <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Comandos ( command= )</a>
+            
+            <a style = "color: white ;background-color: #333;"  >PRÁCTICA</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Ventana con saludo </a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Botón que cambia el texto de un label</a>
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Formulario básico con nombre y edad</a>	
+            
+            
+            
+            
+            
+            
+            
+            <a style = "color: white ;background-color: #333;"  >LAYOUTS Y ORGANIZACIÓN</a>  
+            
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Métodos : pack() , grid() , place()</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Estructuración con Frame/a>
+            <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Widgets anidados</a>
+            
+            
+            <a style = "color: white ;background-color: #333;"  >PRÁCTICA</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Crear un formulario de loggin bien alineado </a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Cuadro de datos con labels y entradas organizadas con grid()</a>
+		
+            
+            <a style = "color: white ;background-color: #333;"  >WIDGETS Y FUNCIONALIDADES INTERMEDIAS</a>  
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Checkbutton, Radiobutton, Listbox, Combobox (de ttk)</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Spinbox, Scale</a>
+            
+             <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Messagebox</a>
+             <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Menús con Menu</a>
+            
+            <a style = "color: white ;background-color: #333;"  >PRÁCTICA</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Encuesta con opciones de respuesta </a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Menú superior con archivo, ayuda , salir</a>
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Aplicación que muestra un resumen con lo que el usuario seleccionó</a>	
+            
+            
+            
+            <a style = "color: white ;background-color: #333;"  >EVENTOS, VALIDACIONES Y CONTROL DE FLUJO </a> 
+            
+             <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Eventos (bind)</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Validaciones de entrada</a>
+             <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Manejo de errores(uso de try/except)</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Actualizar widgets dinámicamente</a>
+            
+            <a style = "color: white ;background-color: #333;"  >PRÁCTICA</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Validación de campos numéricos </a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Formulario que calcula edad con control de errores</a>
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Cambiar color de fondo con un clic del mouse</a>	
+            
+            
+            
+            
+            
+            
+             
+            <a style = "color: white ;background-color: #333;"  >USO DE TTK , ESTILOS Y APARIENCIA</a>
+            
+               <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Introducción a ttk</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Estilo visual(style)</a>
+             <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Cambiar colores, fuentes y tamaños</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Usos de temas(clam, alt, default, classic)</a>
+            
+            
+            <a style = "color: white ;background-color: #333;"  >PRÁCTICA</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Aplicación con estilo personalizado </a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Formulario con campos de entrada estilizados</a>
+			
+            
+            
+            
+              
+            <a style = "color: white ;background-color: #333;"  >ORGANIZACION MODULAR Y REUTILIZACIÓN</a>  
+            
+             <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Separar código en funciones y clases</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Uso de P.O.O. con tk.Frame como base</a>
+             <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Reutilización de componentes</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Gestión de múltiples ventanas o vistas</a>
+            
+            
+            <a style = "color: white ;background-color: #333;"  >PRÁCTICA</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Crear app con MainWindow y subventanas</a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Menú con navegación entre marcos/paginas (tkraise)</a>
+			
+            
+            
+            
+            
+            
+            
+            <a style = "color: white ;background-color: #333;"  >ARCHIVOS Y PERSISTENCIA DE DATOS</a>  
+            
+             <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Leer y guardar datos con open() , .txt, .csv</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Guardar configuraciones del usuario</a>
+             <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Conexión a SQLite con sqlite3</a>
+            
+            
+            <a style = "color: white ;background-color: #333;"  >PRÁCTICA</a>      
+             
+             
+             
+			<a href="#" onclick="loadVideo('KPDSii6JV68', '')">Registro de usuarios guardado en archivo </a>
+             <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Aplicación que lee una base de datos SQLite y muestra resultados</a>
+				
+            
+            
+            
+            
+            <a style = "color: white ;background-color: #333;"  >PROYECTO CON TKINTER</a>  
+            
+               <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Sistema de Gestión de Clientes</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Agenda Personal</a>
+             <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Sistema de Facturación</a>
+        </div>
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema6')">PROYECTO FINAL</a>
+        <div id="tema6" class="submenu">
+           
+            <a href="#" onclick="loadVideo('OCxKBNFutkQ', ' ')">Sistema de Gestión de un Minimercado</a>
+            <a href="#" onclick="loadVideo('4zZh8PyUuvo', '')">Sistema de Gestión de un Restaurante</a>
+            
+        </div>
+        
+       
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema7')">GUIAS DE EJERCICIOS</a>
+        <div id="tema7" class="submenu">
+           
+            <a href="#" onclick="loadVideo('OCxKBNFutkQ', ' ')">Ejercicios Módulo 1 </a>
+            
+        </div>
+        
+        
+        <!-- Más temas aquí... -->
+
+    </div>
+
+    
+    <div id="video-container">
+        <h2><--- Seleccione el video del menú</h2>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/VIDEO_ID?controls=0" frameborder="0" allowfullscreen></iframe>
+        <p class="video-description"></p>
+    </div>
+
+    <script>
+        // Función para mostrar/ocultar submenús y cerrar los demás
+        function toggleSubmenu(id) {
+            var allSubmenus = document.getElementsByClassName('submenu');
+            
+            // Cerrar todos los submenús
+            for (var i = 0; i < allSubmenus.length; i++) {
+                if (allSubmenus[i].id !== id) {
+                    allSubmenus[i].style.display = 'none';
+                }
+            }
+            
+            // Alternar el submenú clickeado
+            var submenu = document.getElementById(id);
+            submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
+        }
+
+        // Función para cargar el video en el contenedor con descripción
+        function loadVideo(videoId, description) {
+            var videoContainer = document.getElementById('video-container');
+            videoContainer.innerHTML = `
+                <h2>Video del Curso de MATEMATICA 51</h2>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                <p class="video-description">${description}</p>`;
+        }
+    </script>
+
+</body>
+</html>
+
+
